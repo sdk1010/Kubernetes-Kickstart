@@ -14,7 +14,7 @@ Internet access
 
 Virtualization support enabled (Check with egrep -c '(vmx|svm)' /proc/cpuinfo, 0=disabled 1=enabled)
 
-Step 1: Update System Packages
+## Step 1: Update System Packages
 
 Update your package lists to make sure you are getting the latest version and dependencies.
 
@@ -59,41 +59,55 @@ curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/miniku
 Make it executable and move it into your path:
 
 chmod +x minikube
+
 sudo mv minikube /usr/local/bin/
+
 image
 
 ## Step 5: Install kubectl
+
 Download kubectl, which is a Kubernetes command-line tool.
 
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+
 Check above image ⬆️ Make it executable and move it into your path:
 
 chmod +x kubectl
+
 sudo mv kubectl /usr/local/bin/
+
 image
 
 ## Step 6: Start Minikube
+
 Now, you can start Minikube with the following command:
 
 minikube start --driver=docker
+
 This command will start a single-node Kubernetes cluster inside a Docker container.
 
 ## Step 7: Check Cluster Status
+
 Check the cluster status with:
 
 minikube status
+
 image
 
 You can also use kubectl to interact with your cluster:
 
 kubectl get nodes
+
 ## Step 8: Stop Minikube
+
 When you are done, you can stop the Minikube cluster with:
 
 minikube stop
+
 Optional: Delete Minikube Cluster
+
 If you wish to delete the Minikube cluster entirely, you can do so with:
 
 minikube delete
-That's it! You've successfully installed Minikube on Ubuntu, and you can now start deploying Kubernetes applications for development and testing.
 
+That's it! You've successfully installed Minikube on Ubuntu, and you can now start deploying Kubernetes applications for development and testing.
