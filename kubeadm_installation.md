@@ -9,6 +9,7 @@ t2.medium instance type or higher
 Both Master & Worker Node
 Run the following commands on both the master and worker nodes to prepare them for kubeadm.
 
+```
 # using 'sudo su' is not a good practice.
 sudo apt update
 sudo apt-get install -y apt-transport-https ca-certificates curl
@@ -24,6 +25,8 @@ echo 'deb https://packages.cloud.google.com/apt kubernetes-xenial main' | sudo t
 
 sudo apt update 
 sudo apt install kubeadm=1.20.0-00 kubectl=1.20.0-00 kubelet=1.20.0-00 -y
+
+```
 Sample Command run on master node
 
 image
