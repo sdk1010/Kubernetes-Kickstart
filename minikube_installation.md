@@ -19,7 +19,7 @@ Virtualization support enabled (Check with egrep -c '(vmx|svm)' /proc/cpuinfo, 0
 Update your package lists to make sure you are getting the latest version and dependencies.
 
 ```
-sudo apt update
+sudo apt update -y
 ```
 
 ![Screenshot (77)](https://github.com/sdk1010/Kubernetes-Kickstart/assets/145788176/6028614b-c9f9-4c43-a408-23588ea14a26)
@@ -41,7 +41,7 @@ Minikube can run a Kubernetes cluster either in a VM or locally via Docker.
 This guide demonstrates the Docker method.
 
 ```
-sudo apt install -y docker.io
+sudo apt install docker.io -y
 ```
 
 ![Screenshot (75)](https://github.com/sdk1010/Kubernetes-Kickstart/assets/145788176/658ada89-fa17-4110-8b2c-b9118a239163)
@@ -49,7 +49,7 @@ sudo apt install -y docker.io
 Start and enable Docker.
 
 ```
-sudo systemctl enable --now docker
+sudo systemctl enable docker --now
 ```
 
 Add current user to docker group (To use docker without root)
@@ -59,7 +59,6 @@ sudo usermod -aG docker $USER && newgrp docker
 ```
 ![Screenshot (74)](https://github.com/sdk1010/Kubernetes-Kickstart/assets/145788176/2dc07c86-b7ef-4d3c-a044-e0d1b0b5a2ec)
 
-Now, logout (use exit command) and connect again.
 
 ## Step 4: Install Minikube
 
