@@ -11,9 +11,9 @@ NGINX with Deployment & Service
 MySQL with ConfigMaps, Secrets & Persistent Volumes
 
 ## Installation Guides
-Kubeadm Installation Guide
+[Kubeadm Installation Guide](https://github.com/sdk1010/Kubernetes-Kickstart/blob/7eebcc0f687e65a533cfefd27d578ead427116a8/kubeadm_installation.md)
 
-Minikube Installation Guide
+[Minikube Installation Guide](https://github.com/sdk1010/Kubernetes-Kickstart/blob/7eebcc0f687e65a533cfefd27d578ead427116a8/minikube_installation.md)
 
 ## Practice Projects
 Microservices on k8s
